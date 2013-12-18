@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="matrixUtil/src/matrixUtil.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+  <body>
+      <img class="background-img" src="http://www.frontpagemag.com/wp-content/uploads/2013/07/New-York-City-Skyline.jpg"></img>
+  </body>
+<script>
+  var viewer = new Viewer({
+    scrollSpeed: 50,
+    friction: .00005,
+    cardWidth: 330,
+    cardHeight: 330,
+    margin: -340,
+    numRows: 4,
+    numColumns: 7,
+    content: new ContentStack()
+  });
+  viewer.initialize();
+</script>
+
+
+
+
+

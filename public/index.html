@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//js.leapmotion.com/0.2.0/leap.min.js"></script>
+  <script src="matrixUtil/src/matrixUtil.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</head>
+  <body>
+  </body>
+<script>
+  var contentObj = new ContentStack();
+  var viewer = new Viewer({
+    scrollSpeed: 30,
+    friction: .00005,
+    cardWidth: 330,
+    cardHeight: 330,
+    margin: -340,
+    numRows: 4,
+    numColumns: 7,
+    content: contentObj
+  });
+  contentObj.getContent(function(){viewer.initialize()});
+</script>
